@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   padding: 20px;
   max-width: 700px;
@@ -5,12 +8,45 @@ body {
   margin: 20px auto;
   font-family: Work Sans;
   font-size: 16px;
+
 }
 
 .quote {
   border-left: 5px solid #2CABF2;
   padding-left: 5px;
-  margin-left: -10px;
+}
+
+.content {
+  overflow: auto;
+}
+
+.read-more {
+  height: 200px;
+  overflow: hidden;
+}
+
+.read-more__button.hidden {
+  display: none;
+}
+
+.read-more__button {
+  margin-top: 2%;
+  font-family: Work Sans;
+  background-color: #2CABF2;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.read-more__button:hover {
+    background-color: #1d89c4;
+    cursor: pointer;
+}
+.read-more__button:focus{
+  outline: none;
 }
 
 .date {
