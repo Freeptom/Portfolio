@@ -28,7 +28,7 @@ body {
   align-items: center;
   height: 100px;
   justify-content: flex-end;
-  padding-right: 1em;
+  padding-right: 4em;
 }
 
 .nav li a {
