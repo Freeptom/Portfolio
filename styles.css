@@ -28,14 +28,14 @@ body {
   align-items: center;
   height: 100px;
   justify-content: flex-end;
-  padding-right: 10%;
+  padding-right: 1em;
 }
 
 .nav li a {
   font-size: .75rem;
   color: white;
   text-decoration: none;
-  padding: 16%;
+  padding: 1em;
 }
 
 
