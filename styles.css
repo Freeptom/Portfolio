@@ -35,9 +35,11 @@ body {
   font-size: .75rem;
   color: white;
   text-decoration: none;
-  margin-right: 60px;
+  margin-right: 50%;
 
 }
+
+
 .nav li a:visited {
   color: white;
 }
@@ -94,7 +96,7 @@ body {
   margin: 0px auto 10px;
   padding: 10px 0;
   max-width: 700px;
-  width: 90%;
+  width: 85%;
   line-height: 110%;
   margin-bottom: 2%;
 }
