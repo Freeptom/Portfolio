@@ -61,7 +61,7 @@ body {
 }
 //********** MAIN CONTENT **********//
 section {
-  padding: 5vh 0 20vh;
+  padding: 8vh 0 30vh;
 }
 
 .cta {
@@ -87,6 +87,7 @@ section {
 
   "header header header header"
   "sub sub sub sub" ;
+
 }
 // .one__icon {
 //   background: rgba(0,0,0,.3);
@@ -131,12 +132,26 @@ section {
   z-index: 10;
   margin-bottom: -4vw;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4vw), 0 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas:
+
+  "header header header header"
+  "sub sub sub sub" ;
 }
 
 .footer {
   color: $inverse;
   background: #5933d6;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas:
+
+  "header header header header"
+  "sub sub sub sub" ;
 }
 
 .quote {
@@ -204,10 +219,22 @@ h1.page_title {
   font-size: 3rem;
   padding: 0 5%;
   line-height: 1;
+  margin: 0 0 1rem 0;
+}
+
+section.blog h1 {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-auto-rows: auto;
+grid-template-areas:
+"header header header header";
 }
 
 section.blog h1 {
   color: $text-main;
+  grid-area: header;
+  align-self: center;
+  justify-self: center;
 }
 
 
@@ -228,6 +255,7 @@ h2.sub_title {
   font-size: 1.3rem;
   font-weight: 300;
   line-height: 1;
+  padding: 0 5%;
 }
 
 p {
