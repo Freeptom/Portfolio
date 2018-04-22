@@ -184,19 +184,14 @@ h1.page_title {
   line-height: 1;
   margin: 0 0 1rem 0; }
 
-section.blog h1 {
+section.blog {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-rows: auto;
-  grid-template-areas: "header header header header"; }
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header"; }
 
 section.blog h1 {
-  color: #3B3B3B;
-  grid-area: header;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  justify-self: center; }
+  color: #3B3B3B; }
 
 h2 {
   margin-top: 20px;
