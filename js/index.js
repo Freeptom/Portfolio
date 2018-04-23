@@ -14,3 +14,13 @@ Array.from(readMoreButtons).forEach(function(button, i) {
     button.classList.add('hidden');
   });
 });
+
+$(document).ready(function () {
+//hamburger menu toggle
+    $('.nav-toggle').click(function () {
+        $('.main-nav').toggleClass('is-open');
+        $('.hamburger').toggleClass('is-open');
+
+    })
+
+})
