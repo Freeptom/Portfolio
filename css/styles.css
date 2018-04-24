@@ -19,31 +19,34 @@ body {
   height: 100vh;
   background-image: url(img/hypnotize.png);*/ }
 
-.nav {
+.main-nav {
   background-color: #2CABF2;
   height: 100px; }
-  .nav ul {
+  .main-nav ul {
+    padding: 0;
+    margin: 0 2rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin: 0;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     list-style-type: none;
     height: 100px; }
-  .nav li {
+  .main-nav li {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center; }
-  .nav a {
+  .main-nav a {
+    margin-left: 1rem;
     font-size: 0.75rem;
     color: #fcfdff;
     text-decoration: none;
+    padding: 0.5rem;
     width: 100px; }
-  .nav a.current {
+  .main-nav a.current {
     border-bottom: 1px solid #fcfdff; }
 
 .container {
@@ -59,7 +62,7 @@ section {
   grid-template-columns: 4fr 2fr 2fr 3fr;
   max-width: 90%; }
 
-.cta {
+.main-nav__cta {
   border: solid 2px #fcfdff;
   border-radius: 5px;
   -webkit-transition: color 100ms, background-color 250ms;
@@ -131,6 +134,7 @@ section {
   grid-template-areas: "header header header header" "sub sub sub sub"; }
 
 .split {
+  padding: 8vh 0 30vh;
   background: #2CABF2;
   position: relative;
   color: #fcfdff;
@@ -138,27 +142,31 @@ section {
   grid-template-columns: repeat(2, minmax(100px, 1fr));
   grid-template-rows: minmax(250px, auto) minmax(250px, auto);
   grid-auto-rows: auto;
-  grid-gap: 2rem; }
+  grid-gap: 1em; }
 
-.split-left {
+.split__left {
   grid-column: 1;
   font-family: Playfair Display;
   font-size: 3rem;
   line-height: 1;
-  margin: 0 0 5rem 0;
+  margin: 0 0 10rem 0;
   justify-self: end;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center; }
 
-.split-right {
+.split__right {
   border-left: 5px solid #fcfdff;
   font-family: Work Sans;
   color: #fcfdff;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.20;
-  padding: 0 10% 0 10px; }
+  padding: 0 .5rem 0 10px; }
+
+@media screen and (max-width: 450px) {
+  .split__right {
+    font-size: .75rem; } }
 
 .quote {
   border-left: 5px solid #2CABF2;
