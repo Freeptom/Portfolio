@@ -11,17 +11,23 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
   </head>
   <body>
-    <header class="header-container">
-      <nav role="navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="blog.html" class="current">Blog</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#" class="main-nav__cta">Contact</a></li>
-        </ul>
-      </nav>
-      </header>
+    <header class = "main-header">
+      <div class="container grid">
+    <nav class="main-nav" role="navigation">
+      <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#" class="main-nav__cta">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-toggle">
+      <div class="hamburger">
+      </div>
+    </div>
+    </div>
+  </header>
     <section class="blog">
     <h1 class="page_title"> Captain's Blog </h1>
     <article class = "post">
@@ -107,6 +113,11 @@
     <h1 class="page_title">Section One</h1>
   <div class="one__icon">:)</div>
  </section> -->
+ <!-- jQuery -->
+ <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+       crossorigin="anonymous"></script>
+       <script src="js/index.js"></script>
   </body>
-  <script src="js/index.js"></script>
+
 </html>

@@ -14,17 +14,23 @@
 
 <body>
 
-  <header class="header-container">
-    <nav role="navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about.html"  class="current">About</a></li>
-        <li><a href="#" class="main-nav__cta">Contact</a></li>
-      </ul>
-    </nav>
-    </header>
+  <header class = "main-header">
+    <div class="container grid">
+  <nav class="main-nav" role="navigation">
+    <ul>
+      <li><a href="index.html" class="current">Home</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#" class="main-nav__cta">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="nav-toggle">
+    <div class="hamburger">
+    </div>
+  </div>
+  </div>
+</header>
 
     <section class="split">
       <h1 class="split__title">About</h1>
@@ -37,8 +43,13 @@
       </p>
     </section>
 
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+          <script src="js/index.js"></script>
 </body>
-<script src="index.js">
+
 </script>
 
 </html>
