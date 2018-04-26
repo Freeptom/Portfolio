@@ -59,14 +59,15 @@ body {
   transition: all ease-in-out 250ms; }
   @media (min-width: 725px) {
     .main-nav {
-      top: 1em;
       left: 0;
-      position: relative;
+      position: fixed;
+      padding-top: 1em;
+      padding-right: 3em;
+      padding-bottom: 1em;
       -webkit-box-flex: 1;
       -ms-flex: auto;
       flex: auto;
-      text-align: right;
-      margin-right: 10%; } }
+      text-align: right; } }
   .main-nav ul {
     margin: 0;
     padding: 0;
