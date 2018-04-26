@@ -32,41 +32,6 @@ body {
   flex-direction: column;
 }
 
-.logo {
-  margin-left: 5%;
-}
-// nav {
-//   z-index: 100;
-//   position: fixed;
-//   top:0;
-//   width: 100%;
-//   overflow: hidden;
-//  background: $primary-color;
-// }
-//
-// header ul li {
-//  display: inline-block;
-//  padding: 0 1.4em 0 0;
-//  font-size: 0.9em;
-// }
-//
-// header ul li a {
-//      margin-left: 1rem;
-//      font-size: 0.75rem;
-//      color: $inverse;
-//      text-decoration: none;
-//      padding: 0.5rem;
-//      width: 100px;
-//    }
-// a {
-//     margin-left: 1rem;
-//     font-size: 0.75rem;
-//     color: $inverse;
-//     text-decoration: none;
-//     padding: 0.5rem;
-//     width: 100px;
-//   }
-
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -84,12 +49,11 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  padding-top: .5em;
+  padding-top: 0.5em;
 }
 
 .main-nav {
-    z-index: 100;
-  // z-index: 100;
+  z-index: 100;
   background-color: $primary-color;
   position: fixed;
   top: 0;
@@ -105,9 +69,6 @@ body {
     padding-bottom: 1em;
     flex: auto;
     text-align: right;
-    // margin-right: 10%;
-
-
   }
 
   ul {
@@ -144,31 +105,34 @@ body {
     align-items: center;
     justify-content: center;
     @media(min-width: 725px) {
-        font-size: 1rem;
+      font-size: 1rem;
       display: inline;
       justify-content: flex-end;
       flex-basis: auto;
-      //   &.current {
-      //   padding-bottom: 0.25rem;
-      //   border-bottom: 1px solid $inverse;
-      // }
+
+      &.current {
+        padding-bottom: 0.25rem;
+        border-bottom: 2px solid $inverse;
+      }
     }
+
     &:hover {
       background: rgba(0,0,0,.10);
       @media(min-width: 725px) {
         background: none;
         color: rgab(0,0,0,.15);
+      }
     }
   }
-}
 
   &.is-open {
     left: 0;
   }
 }
 //hamburger menu
+
 .nav-toggle {
-    position: fixed;
+  position: fixed;
   z-index: 100;
   display: block;
   background: $primary-color;
@@ -212,19 +176,6 @@ body {
     opacity: 0;
   }
 }
-// nav cta
-// .main-nav__cta {
-//   padding: -2rem;
-//   border: solid 2px $inverse;
-//   border-radius: 5px;
-//   transition: color 100ms, background-color 250ms;
-//   transition-timing-function: ease-in-out;
-// }
-// // WHITE FILLHOVER
-// .main-nav__cta:hover {
-//   color: $primary-color;
-//   background-color: $inverse;
-// }
 //********** MAIN CONTENT **********//
 
 .container {
@@ -347,6 +298,8 @@ section.footer {
   margin: 0 5%;
   align-self: start;
 }
+
+
 @media (min-width: 500px) {
   .split__about {
     margin: 10% 10% 0 5%;
@@ -453,10 +406,15 @@ h2.sub_title {
   padding: 0 5%;
 }
 
+h3 {font-size: 1rem;
+line-height: 1.20;
+color: $text-main;
+}
+
 p {
   font-size: 1rem;
   line-height: 1.20;
-  color: $text-main;
+  color: $inverse;
 }
 
 hr {
