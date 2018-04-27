@@ -18,17 +18,21 @@ body {
 .header-container {
   background-color: #2CABF2;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
 
 .grid {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
@@ -43,9 +47,22 @@ body {
   right: 0;
   padding-top: 0.5em; }
 
+.logo {
+  display: none; }
+  @media (min-width: 725px) {
+    .logo {
+      display: block;
+      border: 2px solid #fcfdff;
+      color: #fcfdff;
+      position: absolute;
+      padding: .5rem;
+      margin: 0;
+      bottom: .4rem;
+      left: 5rem; } }
+
 .main-nav {
   z-index: 100;
-  background-color: #2CABF2;
+  background-color: rgba(44, 171, 242, 0.95);
   position: fixed;
   top: 0;
   right: 0;
@@ -58,10 +75,9 @@ body {
     .main-nav {
       left: 0;
       position: fixed;
-      padding-top: 1em;
-      padding-right: 3em;
-      padding-bottom: 1em;
+      padding: 1em 3em 1em 15em;
       -webkit-box-flex: 1;
+      -webkit-flex: auto;
       -ms-flex: auto;
       flex: auto;
       text-align: right; } }
@@ -70,12 +86,15 @@ body {
     padding: 0;
     list-style: none;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     text-align: center;
@@ -84,14 +103,17 @@ body {
       .main-nav ul {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
         -ms-flex-direction: row;
         flex-direction: row;
         height: auto; } }
   .main-nav li {
     -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
     @media (min-width: 725px) {
@@ -103,24 +125,30 @@ body {
     font-size: 1.5rem;
     color: #fcfdff;
     text-decoration: none;
+    -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
+    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center; }
     @media (min-width: 725px) {
       .main-nav a {
-        font-size: 1rem;
+        font-size: 0.9rem;
         display: inline;
         -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
         justify-content: flex-end;
+        -webkit-flex-basis: auto;
         -ms-flex-preferred-size: auto;
         flex-basis: auto; }
         .main-nav a.current {
@@ -180,6 +208,11 @@ body {
     transform: rotate(-90deg) translateX(3px); }
   .hamburger.is-open::before {
     opacity: 0; }
+
+.skills {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 .container {
   display: grid;
@@ -248,10 +281,10 @@ section.footer {
 
 .split {
   height: auto;
-  background: #fcfdff;
+  background-image: url("img/hypnotize.png");
   color: #3B3B3B;
   display: grid;
-  grid-template-areas: "title" "about";
+  grid-template-areas: "title" "about";
   grid-auto-rows: auto;
   grid-gap: 1rem; }
 
@@ -282,6 +315,7 @@ section.footer {
   line-height: 1.20;
   padding: 0 0 0 0.5rem;
   margin: 0 10%;
+  -webkit-align-self: start;
   -ms-flex-item-align: start;
   align-self: start; }
 
@@ -347,6 +381,7 @@ section.footer {
 
 h1.page_title {
   grid-area: header;
+  -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
   justify-self: center;
@@ -374,6 +409,7 @@ h2 {
 
 h2.sub_title {
   grid-area: sub;
+  -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
   justify-self: center;

@@ -38,8 +38,6 @@ body {
 }
 
 .container {
-  // width: 100%;
-  // max-width: 1200px;
   padding: 0 2em 0 0;
   background-color: $primary-color;
 }
@@ -52,9 +50,23 @@ body {
   padding-top: 0.5em;
 }
 
+.logo {
+display: none;
+@media(min-width: 725px) {
+  display: block;
+  border: 2px solid $inverse;
+  color:$inverse;
+  position: absolute;
+  padding: .5rem;
+  margin: 0;
+  bottom: .4rem;
+  left: 5rem;
+  }
+}
+
 .main-nav {
   z-index: 100;
-  background-color: $primary-color;
+  background-color: rgba(44, 171, 242,.95);
   position: fixed;
   top: 0;
   right: 0;
@@ -64,9 +76,7 @@ body {
   @media(min-width: 725px) {
     left: 0;
     position: fixed;
-    padding-top: 1em;
-    padding-right: 3em;
-    padding-bottom: 1em;
+    padding: 1em 3em 1em 15em;
     flex: auto;
     text-align: right;
   }
@@ -105,7 +115,7 @@ body {
     align-items: center;
     justify-content: center;
     @media(min-width: 725px) {
-      font-size: 1rem;
+      font-size: 0.9rem;
       display: inline;
       justify-content: flex-end;
       flex-basis: auto;
@@ -176,8 +186,13 @@ body {
     opacity: 0;
   }
 }
-//********** MAIN CONTENT **********//
 
+.skills {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+//********** MAIN CONTENT **********//
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -258,11 +273,11 @@ section.footer {
 
 .split {
   height: auto;
-  background:$inverse;
-  color:$text-main;
+  // background:$inverse;
+  background-image: url("img/hypnotize.png");
+  color: $text-main;
   display: grid;
-  grid-template-areas: "title"
-                        "about";
+  grid-template-areas: "title" "about";
   grid-auto-rows: auto;
   grid-gap: 1rem;
 }
@@ -272,7 +287,6 @@ section.footer {
     grid-template-areas: "title about";
   }
 }
-
 
 .split__title {
   grid-area: title;
@@ -292,7 +306,7 @@ section.footer {
   grid-area: about;
   border-left: 5px solid $primary-color;
   font-family: Work Sans;
-  color:$text-main;
+  color: $text-main;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.20;
@@ -300,8 +314,6 @@ section.footer {
   margin: 0 10%;
   align-self: start;
 }
-
-
 @media (min-width: 500px) {
   .split__about {
     margin: 0 20% 0 0;
@@ -309,23 +321,22 @@ section.footer {
 }
 
 .split__about--info {
-color: $text-main;
-margin: 0;
+  color: $text-main;
+  margin: 0;
 }
-
 
 .quote {
   border-left: 5px solid $primary-color;
   padding-left: 5px;
   color: $text-main;
 }
+
 .post-content {
   color: $text-main;
 }
 
 .content {
   overflow: auto;
-
 }
 
 .read-more {
@@ -419,9 +430,10 @@ h2.sub_title {
   padding: 0 5%;
 }
 
-h3 {font-size: 1rem;
-line-height: 1.20;
-color: $text-main;
+h3 {
+  font-size: 1rem;
+  line-height: 1.20;
+  color: $text-main;
 }
 
 p {
@@ -429,6 +441,7 @@ p {
   line-height: 1.20;
   color: $inverse;
 }
+
 .post {
   font-size: 1rem;
   line-height: 1.20;
