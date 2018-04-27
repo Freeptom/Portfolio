@@ -257,20 +257,22 @@ section.footer {
 }
 
 .split {
-  height: 100vh;
-  background: $primary-color;
-  color: $inverse;
+  height: auto;
+  background:$inverse;
+  color:$text-main;
   display: grid;
-  grid-template-areas: "title" "about";
+  grid-template-areas: "title"
+                        "about";
   grid-auto-rows: auto;
   grid-gap: 1rem;
 }
 @media (min-width: 500px) {
   .split {
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-areas: "title about";
   }
 }
+
 
 .split__title {
   grid-area: title;
@@ -280,31 +282,37 @@ section.footer {
   justify-self: center;
   margin: 0;
 }
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   .split__title {
-    margin: 10% 0 0 60%;
+    margin: 2rem 0 0 6rem;
   }
 }
 
 .split__about {
   grid-area: about;
-  border-left: 5px solid $inverse;
+  border-left: 5px solid $primary-color;
   font-family: Work Sans;
-  color: $inverse;
+  color:$text-main;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.20;
   padding: 0 0 0 0.5rem;
-  margin: 0 5%;
+  margin: 0 10%;
   align-self: start;
 }
 
 
 @media (min-width: 500px) {
   .split__about {
-    margin: 10% 10% 0 5%;
+    margin: 0 20% 0 0;
   }
 }
+
+.split__about--info {
+color: $text-main;
+margin: 0;
+}
+
 
 .quote {
   border-left: 5px solid $primary-color;
