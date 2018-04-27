@@ -309,10 +309,15 @@ section.footer {
 .quote {
   border-left: 5px solid $primary-color;
   padding-left: 5px;
+  color: $text-main;
+}
+.post-content {
+  color: $text-main;
 }
 
 .content {
   overflow: auto;
+
 }
 
 .read-more {
@@ -349,7 +354,7 @@ section.footer {
 .date {
   font-family: Inconsolata;
   font-size: 0.6rem;
-  color: #3B3B3B;
+  color: $text-main;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
@@ -383,7 +388,7 @@ section.blog {
 }
 
 section.blog h1 {
-  color: #3B3B3B;
+  color: $text-main;
 }
 
 h2 {
@@ -415,6 +420,10 @@ p {
   font-size: 1rem;
   line-height: 1.20;
   color: $inverse;
+}
+.post {
+  font-size: 1rem;
+  line-height: 1.20;
 }
 
 hr {

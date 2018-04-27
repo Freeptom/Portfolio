@@ -309,7 +309,11 @@ section.footer {
 
 .quote {
   border-left: 5px solid #2CABF2;
-  padding-left: 5px; }
+  padding-left: 5px;
+  color: #3B3B3B; }
+
+.post-content {
+  color: #3B3B3B; }
 
 .content {
   overflow: auto; }
@@ -405,6 +409,10 @@ p {
   font-size: 1rem;
   line-height: 1.20;
   color: #fcfdff; }
+
+.post {
+  font-size: 1rem;
+  line-height: 1.20; }
 
 hr {
   margin-top: 5%;
