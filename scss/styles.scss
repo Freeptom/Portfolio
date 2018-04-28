@@ -145,7 +145,7 @@ display: none;
   position: fixed;
   z-index: 100;
   display: block;
-  background: $primary-color;
+  background-color: rgba(44, 171, 242,.95);
   padding: 1em;
   // position: absolute;
   right: 1em;
@@ -379,12 +379,34 @@ section.footer {
 }
 
 .post {
+  float: left;
   margin: 0 auto 10px;
   padding: 10px 0;
   max-width: 700px;
   width: 90%;
   line-height: 110%;
   margin-bottom: 2%;
+}
+
+.post-image {
+  margin: 0rem .7rem 1.5rem 0;
+  width: 70%;
+}
+
+figure {
+  position: relative;
+  font-size: .5rem;
+  margin: 0;
+  padding:0;
+
+}
+figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right:0;
+  width: 50%;
+
 }
 //********** TYPOGRAPHY **********//
 
