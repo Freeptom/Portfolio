@@ -51,16 +51,16 @@ body {
 }
 
 .logo {
-display: none;
-@media(min-width: 725px) {
-  display: block;
-  border: 2px solid $inverse;
-  color:$inverse;
-  position: absolute;
-  padding: .5rem;
-  margin: 0;
-  bottom: .4rem;
-  left: 5rem;
+  display: none;
+  @media(min-width: 725px) {
+    display: block;
+    border: 2px solid $inverse;
+    color: $inverse;
+    position: absolute;
+    padding: 0.5rem;
+    margin: 0;
+    bottom: 0.4rem;
+    left: 5rem;
   }
 }
 
@@ -105,8 +105,6 @@ display: none;
       text-align: right;
     }
   }
-
-
 
   a {
     font-size: 1.5rem;
@@ -189,20 +187,26 @@ display: none;
   }
 }
 
-.skills {
+.ul-unstyled {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-a.mailto {
+a.text-link {
   color: $text-main;
   text-decoration: none;
-  padding-bottom: 2px;
+  padding-bottom: 0.1rem;
   border-bottom: 2px solid $primary-color;
-
+}
+a.text-link-inverse {
+  color: $inverse;
+  text-decoration: none;
+  padding-bottom: 0.1rem;
+  border-bottom: 2px solid $inverse;
 }
 //********** MAIN CONTENT **********//
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -211,8 +215,9 @@ a.mailto {
 section {
   padding: 20vh 0 40vh;
 }
+
 section:last-of-type {
-  padding: 20vh 0 10vh;
+  padding: 20vh 0 20vh;
 }
 
 .one {
@@ -273,8 +278,8 @@ section:last-of-type {
   grid-template-areas: "header header header header" "sub sub sub sub";
 }
 
-.footer {
-  padding: 8vh 0 20vh;
+.three {
+  padding: 8vh 0 10vh;
   color: $inverse;
   background: $primary-color;
   position: relative;
@@ -286,7 +291,6 @@ section:last-of-type {
 
 .split {
   height: auto;
-  background-image: url("img/hypnotize.png");
   color: $text-main;
   display: grid;
   grid-template-areas: "title" "about";
@@ -335,6 +339,40 @@ section:last-of-type {
   color: $text-main;
   margin: 0;
 }
+
+.grid-imgs {
+  margin: 2rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+
+.grid-image {
+position: relative;
+padding: 1rem;
+display: block;
+width:100%;
+transition: transform 300ms;
+}
+.grid-image:hover {
+  transform: scale(1.1);
+}
+
+.grid-item {
+  box-shadow: 0 5px 15px rgba(0,0,0,.25);
+  padding: 1rem;
+  margin: 1rem .25rem 1rem .25rem;
+  background-color: $inverse;
+}
+
+.grid-item h2 {
+  font-family: Work Sans;
+  color: $text-main;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.2;
+
+}
+
 
 .quote {
   border-left: 5px solid $primary-color;
@@ -400,22 +438,22 @@ section:last-of-type {
 }
 
 .post-image {
-  margin: 0rem .7rem 1.5rem 0;
+  margin: 0 0.7rem 1.5rem 0;
   width: 70%;
 }
 
 figure {
   position: relative;
-  font-size: .5rem;
+  font-size: 0.5rem;
   margin: 0;
-  padding:0;
-
+  padding: 0;
 }
+
 figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
-  right:0;
+  right: 0;
   width: 50%;
 }
 
@@ -432,6 +470,7 @@ figcaption {
       width: 40%;
     }
   }
+
   &:hover {
     content: url("/img/tom-computer-2.jpg");
   }
@@ -450,14 +489,13 @@ h1.page_title {
 }
 
 .info-title {
-    font-family: Inconsolata;
-    font-size: 0.6rem;
-    color: $text-main;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    margin-bottom: .25rem;
-  }
-
+  font-family: Inconsolata;
+  font-size: 0.6rem;
+  color: $text-main;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.25rem;
+}
 
 section.blog {
   display: grid;
@@ -466,9 +504,22 @@ section.blog {
   grid-template-areas: "header";
 }
 
-section.blog h1 {
+section.work {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header";
+  padding: 20vh 0 0 0 ;
+  background-color: $primary-color;
+}
+.work h1 {
+  color: $inverse;
+}
+
+.blog h1 {
   color: $text-main;
 }
+
 
 h2 {
   margin-top: 20px;
@@ -478,7 +529,7 @@ h2 {
   font-weight: 700;
 }
 
-h2.sub_title {
+h2.sub_title-inverse {
   grid-area: sub;
   align-self: center;
   justify-self: center;
@@ -487,8 +538,53 @@ h2.sub_title {
   font-size: 1.3rem;
   font-weight: 300;
   line-height: 1;
-  padding: 0 5%;
+  padding: 0 1rem;
 }
+
+h2.sub_title {
+  grid-area: sub;
+  align-self: center;
+  justify-self: center;
+  font-family: Work Sans;
+  color: $text-main;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.2;
+  padding: 0 1rem;
+  @media (min-width: 700px) {
+    & {
+      margin: 0 5rem;
+    }
+  }
+    @media (min-width: 1250px) {
+      & {
+        margin: 0 15rem;
+      }
+    }
+  }
+
+h2.sub_title-inverse {
+  grid-area: sub;
+  align-self: center;
+  justify-self: center;
+  font-family: Work Sans;
+  color: $inverse;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.2;
+  padding: 0 1rem;
+  @media (min-width: 700px) {
+    & {
+      margin: 0 5rem;
+    }
+  }
+    @media (min-width: 1250px) {
+      & {
+        margin: 0 15rem;
+      }
+    }
+  }
+
 
 h3 {
   font-size: 1rem;
