@@ -214,12 +214,21 @@ body {
   margin: 0;
   padding: 0; }
 
+a.mailto {
+  color: #3B3B3B;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #2CABF2; }
+
 .container {
   display: grid;
   grid-template-columns: 1fr; }
 
 section {
   padding: 20vh 0 40vh; }
+
+section:last-of-type {
+  padding: 20vh 0 10vh; }
 
 .one {
   background: #2CABF2;
@@ -269,7 +278,7 @@ section {
   grid-auto-rows: auto;
   grid-template-areas: "header header header header" "sub sub sub sub"; }
 
-section.footer {
+.footer {
   padding: 8vh 0 20vh;
   color: #fcfdff;
   background: #2CABF2;
@@ -298,12 +307,11 @@ section.footer {
   font-family: Playfair Display;
   font-size: 3rem;
   line-height: 1;
-  justify-self: center;
-  margin: 0; }
+  justify-self: center; }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
   .split__title {
-    margin: 2rem 0 0 6rem; } }
+    margin: 1rem 0 0 3rem; } }
 
 .split__about {
   grid-area: about;
@@ -314,7 +322,7 @@ section.footer {
   font-weight: 400;
   line-height: 1.20;
   padding: 0 0 0 0.5rem;
-  margin: 0 10%;
+  margin: 0 5%;
   -webkit-align-self: start;
   -ms-flex-item-align: start;
   align-self: start; }
@@ -377,8 +385,8 @@ section.footer {
   padding: 10px 0;
   max-width: 700px;
   width: 90%;
-  line-height: 110%;
-  margin-bottom: 2%; }
+  margin-bottom: 2%;
+  line-height: 1.20; }
 
 .post-image {
   margin: 0rem .7rem 1.5rem 0;
@@ -397,6 +405,20 @@ figcaption {
   right: 0;
   width: 50%; }
 
+.round {
+  margin-top: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 20%;
+  border-radius: 50%; }
+  @media (min-width: 500px) {
+    .round {
+      width: 40%; } }
+  .round:hover {
+    content: url("/img/tom-computer-2.jpg"); }
+
 h1.page_title {
   grid-area: header;
   -webkit-align-self: center;
@@ -408,6 +430,14 @@ h1.page_title {
   padding: 0 5%;
   line-height: 1;
   margin: 0 0 1rem; }
+
+.info-title {
+  font-family: Inconsolata;
+  font-size: 0.6rem;
+  color: #3B3B3B;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: .25rem; }
 
 section.blog {
   display: grid;
