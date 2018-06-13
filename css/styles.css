@@ -356,6 +356,7 @@ section:last-of-type {
   transition: transform 300ms;
   transition: transform 300ms, -webkit-transform 300ms; }
 
+
 .grid-image:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
