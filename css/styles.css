@@ -547,7 +547,12 @@ h3 {
 p {
   font-size: 1rem;
   line-height: 1.20;
-  color: #fcfdff; }
+  color: #fcfdff; 
+}
+
+.strike p {
+  text-decoration: line-through;
+}
 
 .post {
   font-size: 1rem;
