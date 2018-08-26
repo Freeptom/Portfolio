@@ -38,15 +38,21 @@ object-fit: contain;
 }
 
 .controls {
+    z-index: 1;
     position: absolute;
-    top: 60px;
+    display: inline-block;
+    margin-top: 12%;
+    left: 120px;
+    top:0;
+    bottom: 0;
+   
     
 }
 
 .controls button {
     font-family: 'Raleway', sans-serif;
     background: white;
-    color: black; 
+    color: black;
     cursor: pointer; 
     border: none; 
     transition: opacity 0.3s;
