@@ -1,9 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: Work Sans;
+
     color: #2222;
 }
+
 
 .gallery {
     height: 100%;
@@ -36,15 +38,13 @@ object-fit: contain;
 }
 
 .controls {
-    
     position: absolute;
-    left: 70px;
-    right: 0;
-    bottom: 30px;
+    top: 60px;
     
 }
 
 .controls button {
+    font-family: 'Raleway', sans-serif;
     background: white;
     color: black; 
     cursor: pointer; 
