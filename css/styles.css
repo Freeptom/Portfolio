@@ -511,7 +511,7 @@ h2.sub_title {
   -ms-flex-item-align: center;
   align-self: center;
   justify-self: center;
-  font-family: Work Sans;
+  font-family: Open Sans;
   color: #3B3B3B;
   font-size: 1.3rem;
   font-weight: 300;
@@ -529,7 +529,7 @@ h2.sub_title-inverse {
   -ms-flex-item-align: center;
   align-self: center;
   justify-self: center;
-  font-family: 'Open Sans';
+  font-family: Open Sans;
   color: #fcfdff;
   font-size: 1.3rem;
   font-weight: 300;
