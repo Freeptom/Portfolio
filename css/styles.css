@@ -10,10 +10,12 @@
   box-sizing: border-box; }
 
 body {
-  font-family: Work Sans;
+  font-family: 'Open Sans', sans-serif;
   padding: 0;
   margin: 0;
   background: #fcfdff; }
+  body em {
+    font-style: italic; }
 
 .header-container {
   background-color: #2CABF2;
@@ -37,7 +39,6 @@ body {
   background-color: #2CABF2; }
 
 .main-header {
- 
   position: absolute;
   top: 0;
   left: 0;
@@ -58,7 +59,6 @@ body {
       left: 5rem; } }
 
 .main-nav {
-  font-family: Work Sans;
   z-index: 100;
   background-color: rgba(44, 171, 242, 0.95);
   position: fixed;
@@ -306,7 +306,7 @@ section:last-of-type {
 .split__about {
   grid-area: about;
   border-left: 5px solid #2CABF2;
-  font-family: Work Sans;
+  font-family: 'Open Sans';
   color: #3B3B3B;
   font-size: 1rem;
   font-weight: 400;
@@ -353,7 +353,7 @@ section:last-of-type {
   background-color: #fcfdff; }
 
 .grid-item h2 {
-  font-family: Work Sans;
+  font-family: 'Open Sans';
   color: #3B3B3B;
   font-size: 1.3rem;
   font-weight: 300;
@@ -362,13 +362,16 @@ section:last-of-type {
 .quote {
   border-left: 5px solid #2CABF2;
   padding-left: 5px;
-  color: #3B3B3B; }
+  color: #3B3B3B;
+  line-height: 1.30; }
 
 .post-content {
-  color: #3B3B3B; }
+  color: #3B3B3B;
+  line-height: 1.30; }
 
 .content {
-  overflow: auto; }
+  overflow: auto;
+  color: RED; }
 
 .read-more {
   height: 200px;
@@ -379,7 +382,7 @@ section:last-of-type {
 
 .read-more__button {
   margin-top: 2%;
-  font-family: Work Sans;
+  font-family: 'Open Sans';
   background-color: #2CABF2;
   border: none;
   color: #fcfdff;
@@ -496,7 +499,7 @@ h2.sub_title-inverse {
   -ms-flex-item-align: center;
   align-self: center;
   justify-self: center;
-  font-family: Work Sans;
+  font-family: 'Open Sans';
   color: #fcfdff;
   font-size: 1.3rem;
   font-weight: 300;
@@ -526,7 +529,7 @@ h2.sub_title-inverse {
   -ms-flex-item-align: center;
   align-self: center;
   justify-self: center;
-  font-family: Work Sans;
+  font-family: 'Open Sans';
   color: #fcfdff;
   font-size: 1.3rem;
   font-weight: 300;
@@ -547,12 +550,7 @@ h3 {
 p {
   font-size: 1rem;
   line-height: 1.20;
-  color: #fcfdff; 
-}
-
-.strike p {
-  text-decoration: line-through;
-}
+  color: #fcfdff; }
 
 .post {
   font-size: 1rem;
@@ -564,40 +562,3 @@ hr {
   background-color: #2CABF2;
   border: 0;
   width: 80%; }
-
-a.back {
-  color:red;
-  text-decoration: none;
-}
-/* 
- .controls {
-    
-  position: absolute;
-  left: 70px;
-  right: 0;
-  top: 100px;
-  
-}
-
-.controls button {
-  background: white;
-  color: #22222;
-  cursor: pointer; 
-  border: none; 
-  transition: opacity 0.3s;
-}
-
-button:hover {
-  opacity: 1;
-}
-
-button:focus {
-  outline:0;
-}
-
-button {
-  opacity: 0.9;
-  font-size: 24px;
-  padding: 20px 40px 20px 40px;
-  margin: 0;
-} */

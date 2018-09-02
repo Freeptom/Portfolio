@@ -19,10 +19,14 @@ $inverse: #fcfdff;
 $text-main: #3B3B3B;
 
 body {
-  font-family: Work Sans;
+  font-family: 'Open Sans', sans-serif;
   padding: 0;
   margin: 0;
   background: $inverse;
+
+  em {
+    font-style: italic;
+  }
 }
 //********** NAV **********//
 
@@ -320,7 +324,7 @@ section:last-of-type {
 .split__about {
   grid-area: about;
   border-left: 5px solid $primary-color;
-  font-family: Work Sans;
+  font-family: 'Open Sans';
   color: $text-main;
   font-size: 1rem;
   font-weight: 400;
@@ -366,7 +370,7 @@ transition: transform 300ms;
 }
 
 .grid-item h2 {
-  font-family: Work Sans;
+  font-family: 'Open Sans';
   color: $text-main;
   font-size: 1.3rem;
   font-weight: 300;
@@ -379,14 +383,17 @@ transition: transform 300ms;
   border-left: 5px solid $primary-color;
   padding-left: 5px;
   color: $text-main;
+  line-height: 1.30;
 }
 
 .post-content {
   color: $text-main;
+  line-height: 1.30;
 }
 
 .content {
   overflow: auto;
+  color: RED;
 }
 
 .read-more {
@@ -400,7 +407,7 @@ transition: transform 300ms;
 
 .read-more__button {
   margin-top: 2%;
-  font-family: Work Sans;
+  font-family: 'Open Sans';
   background-color: $primary-color;
   border: none;
   color: #fcfdff;
@@ -520,6 +527,7 @@ section.work {
 
 .blog h1 {
   color: $text-main;
+ 
 }
 
 
@@ -538,7 +546,7 @@ h2.sub_title-inverse {
   grid-area: sub;
   align-self: center;
   justify-self: center;
-  font-family: Work Sans;
+  font-family: 'Open Sans';
   color: $inverse;
   font-size: 1.3rem;
   font-weight: 300;
@@ -572,7 +580,7 @@ h2.sub_title-inverse {
   grid-area: sub;
   align-self: center;
   justify-self: center;
-  font-family: Work Sans;
+  font-family: 'Open Sans';
   color: $inverse;
   font-size: 1.3rem;
   font-weight: 300;
